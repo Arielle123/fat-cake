@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fat Cake Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+       
+
+        h2 {
+            color: #e67e22;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d35400;
+        }
+
+
+
+.instructions {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.text-column {
+    flex: 1;
+}
+
+.image-column {
+    flex: 1;
+}
+
+.image-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}
+.text-column ol li {
+    margin-bottom: 12px;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Delicious Fat Cake Recipe</h1>
+
+       <div class="content">
+    <!-- LEFT COLUMN -->
+    <div class="text-column">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>4 cups flour</li>
+            <li>2 teaspoons yeast</li>
+            <li>2 tablespoons sugar</li>
+            <li>1 teaspoon salt</li>
+            <li>2 cups warm water</li>
+            <li>Oil for frying</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Mix flour, yeast, sugar, and salt in a bowl.</li>
+            <li>Add warm water and mix into a soft dough.</li>
+            <li>Cover and let rise for 1 hour.</li>
+            <li>Heat oil and fry spoonfuls of dough until golden brown.</li>
+            <li>Drain on paper towels and enjoy!</li>
+        </ol>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="image-column">
+        <img src="https://www.aspicyperspective.com/wp-content/uploads/2022/06/Fat-Cakes-Fried-Dough-Recipe-VetKoek-5-650x866.jpg" alt="Fat Cake (Vetkoek)">
+    </div>
+</div>
+
+   
+</div>
+
+
+       <button onclick="printRecipe()">PRINT RECIPE</button>
+
+    </div>
+<script>
+    function printRecipe() {
+        window.print();
+    }
+</script>
+
+</body>
+</html>
